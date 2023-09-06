@@ -110,7 +110,7 @@ const Sidebar = ({ buttonSidebar }: { buttonSidebar: boolean }) => {
   };
   return (
     <>
-      <div className="fixed w-full h-24 top-0 left-0 z-40 mix-blend-difference">
+      <div className="fixed w-full h-24 top-0 left-0 z-50 lg:z-30 mix-blend-difference">
         <div className="container">
           <div className="flex justify-end items-center h-full">
             <button onClick={() => setIsOpen(!isOpen)}>

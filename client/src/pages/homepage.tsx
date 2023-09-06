@@ -113,7 +113,7 @@ const Homepage = () => {
       if (count >= dataHomepage.length - 1) {
         setCount(0);
       } else setCount(count + 1);
-    }, 5000);
+    }, 70000);
 
     return () => clearInterval(timeOut);
   }, [count]);
