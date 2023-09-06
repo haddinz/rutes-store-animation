@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+}
+
+.full-container {
+  @apply w-full h-full mx-auto relative
+}
+
+.container {
+  @apply w-11/12 md:w-10/12 h-full mx-auto relative
+}
+
+.paragraf {
+  @apply font-poppins text-[10px] lg:text-[13px] 
+}
+
+.title-homepage {
+  @apply font-montserrat uppercase font-bold text-[5vw] md:text-[4.5vw] lg:text-[2.8vw]
+}
+
+.h2 {
+  @apply font-montserrat font-bold text-xl md:text-3xl uppercase
+}
+
+.h3 {
+  @apply font-montserrat font-semibold text-base md:text-lg uppercase text-orange-500
+}
